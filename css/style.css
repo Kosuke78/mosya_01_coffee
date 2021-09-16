@@ -1,0 +1,240 @@
+/****************************************
+* リセットCSS
+*****************************************/
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-size: 100%;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	letter-spacing: 1.5px;
+	line-height: 1.5;
+}
+img {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+a {
+	text-decoration: none;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+html , body {
+    height: 100%;
+}
+
+/* サイト全体のフォント指定 */
+body {
+    font-family: "Helvetica Neue"、"Arial"、"Hiragino Sans"、"Hiragino Kaku Gothic ProN"、"Meiryo"、"sans-serif" ;
+    }
+
+/* mv(メインビジュアル) */
+.mv { 
+    background: url(../img/jerry-zhang-ePpaQC2c1xA-unsplash.jpg) no-repeat fixed; 
+    background-size: cover; 
+    position: relative;
+}
+.nav_menu {
+    position: absolute;
+    display: flex;
+    top: 30px;
+    right: 40px;
+}
+.nav_item {
+    padding: 0px 15px;
+    color: #fff;
+    text-shadow: 2px 2px 2px black;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+}
+.nav_item:hover {
+    color: red;
+}
+.mv_title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: 0px 0px 10px #fff;
+    margin: 0;
+}
+.nav_item {
+    flex: 1;
+    text-align: center;
+}
+.cd-fixed-bg {
+    position: relative;
+    min-height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 2;
+}
+
+/*--固定背景01--*/
+.cd-fixed-bg.cd-bg-1  {
+  background-image: url(../img/menu.jpg);
+  height: 100%;
+}
+
+/*--固定背景02--*/
+.cd-fixed-bg.cd-bg-2  {
+  background-image: url(../img/about.jpg);
+  height: 100%;
+
+}
+
+/*--固定背景03--*/
+.cd-fixed-bg.cd-bg-3  {
+    background-image: url(../img/location.jpg);
+  height: 100%;
+
+  }
+
+.title_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+}
+.menu_title {
+
+
+}
+.list_box {
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+}
+.content_title {
+    color: #fff;
+    text-shadow: 0px 0px 10px #fff;
+    font-size: 3rem;
+}
+
+/* メニュー */
+.menu_box {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+}
+.menu_item_r {
+    border-left: 0.5px solid black;
+    width: 40%;
+    height: auto;
+    padding: 50px;
+}
+.menu_item_l {
+    border-right: 0.5px solid black ;
+    width: 40%;
+    height: auto;
+    padding: 50px;
+
+}
+.menu_title_inner {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.menu_item_title {
+    border-bottom: 2px solid red;
+    display: inline-block;
+    font-size: 2rem;
+}
+.menu {
+    display: flex;
+    margin-bottom: 30px;
+}
+.menu_name {
+    flex: 1;
+    border-bottom:1px dotted black;
+}
+
+.price {
+    text-align: center;
+}
+
+/* ABOUT(アバウト) */
+.about_box {
+    background-color: #fff;
+    /* padding-bottom: 50px; */
+    width: 100%;
+    height: auto;
+    padding: 50px 0px;
+}
+.about_box_inner {
+    height: auto;
+}
+.coffee_des_inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.coffee_item {
+    width: 45%;
+    padding: 10px;
+}
+.about_title_box {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* LOACTION(ロケーション) */
+.location_box {
+    background-color: #fff;
+    padding: 50px;
+    position: relative;
+}
+.location_map_box {
+    padding: 0 100px;
+}
+.location_title_box {
+    text-align: center;
+    margin-bottom: 80px;
+}
+.center {
+    text-align: center;
+}
+.location_des_item {
+    padding: 10px;
+}
+
+/* コピーライト */
+.copyright {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    height: auto;
+    font-size: 0.5rem;
+}
+
