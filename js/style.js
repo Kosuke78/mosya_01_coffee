@@ -30,7 +30,7 @@ $(window).resize(function () {
 
 // 要素の高さを取得
 $(function() {
-$(window).load(function(){
+$(window).on('load',function(){
   // タイトルのBOX分の高さを取得
   var child1 = $('div[class="title_box"]').height();
   // その下のコンテンツのBOX分の高さを取得
