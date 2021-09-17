@@ -109,7 +109,7 @@ body {
 
 /* mv(メインビジュアル) */
 .mv {
-  background: url(../img/jerry-zhang-ePpaQC2c1xA-unsplash.jpg) no-repeat fixed;
+  background: url(../img/cafeteria.png) no-repeat fixed;
   background-size: cover;
   position: relative;
 }
@@ -220,9 +220,11 @@ body {
   margin-bottom: 50px;
 }
 .menu_item_title {
-  border-bottom: 2px solid red;
+  border-bottom: 5px solid red;
   display: inline-block;
   font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 3px;
 }
 .menu {
   display: flex;
@@ -262,6 +264,93 @@ body {
 .about_title_box {
   text-align: center;
   margin-bottom: 50px;
+}
+.read_more {
+  text-align: center;
+  margin: 50px 0px;
+}
+.read_more_btn {
+  display: inline-block;
+  padding: 20px 40px;
+  position: relative;
+  background-color: #fff;
+  color: #000;
+}
+/* 擬似要素の共通スタイル */
+.read_more_btn::after,
+.read_more_btn::before,
+.read_more_btn p::after,
+.read_more_btn p::before,
+.read_more_btn span::after,
+.read_more_btn span::before {
+  background-color: red;
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 10;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+.read_more_btn span::after,
+.read_more_btn span::before {
+  background-color: #fff;
+}
+/* 左上へ配置 */
+.read_more_btn::after {
+  width: 0px;
+  height: 2px;
+  top: 0px;
+  left: 30%;
+}
+/* 右下へ配置 */
+.read_more_btn::before {
+  width: 0px;
+  height: 2px;
+  right: 30%;
+  bottom: 0px;
+}
+/* 左上へ配置 */
+.read_more_btn p::after {
+  width: 2px;
+  height: 0px;
+  left: 0px;
+  top: 30%;
+}
+/* 右下へ配置 */
+.read_more_btn p::before {
+  width: 2px;
+  height: 0px;
+  bottom: 30%;
+  right: 0px;
+}
+/* 初期状態の枠線 左上 */
+.read_more_btn span::after {
+  top: 0px;
+  left: 0px;
+  width: 30%;
+  height: 30%;
+  border-top: 2px solid red;
+  border-left: 2px solid red;
+}
+/* 初期状態の枠線 右下 */
+.read_more_btn span::before {
+  bottom: 0px;
+  right: 0px;
+  width: 30%;
+  height: 30%;
+  border-bottom: 2px solid red;
+  border-right: 2px solid red;
+}
+
+/* hover */
+.read_more_btn:hover::after,
+.read_more_btn:hover::before {
+  width: 70%;
+}
+
+.read_more_btn:hover p::after,
+.read_more_btn:hover p::before {
+  height: 70%;
 }
 
 /* LOACTION(ロケーション) */
@@ -306,6 +395,14 @@ body {
     z-index: 2;
     width: 100%;
     height: 100px;
+  }
+  /* セクションタイトル（共通） */
+  .menu_item_title {
+    border-bottom: 8px solid red;
+  }
+  /* メインビジュアル */
+  .mv {
+    background-position: center center;
   }
   /* MENU */
   .title_box {
