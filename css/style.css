@@ -1,3 +1,6 @@
+.abc {
+  height: 100%;
+}
 /****************************************
 * リセットCSS
 *****************************************/
@@ -152,6 +155,11 @@ body {
   height: 10px;
 }
 
+.margin_red, .margin_red2, .margin_red3  {
+  width: 100%;
+  height: 100%;
+}
+
 /* 固定背景（共通） */
 .cd-fixed-bg {
   position: relative;
@@ -177,14 +185,20 @@ body {
   background-image: url(../img/location.jpg);
   height: 100%;
 }
+.under_bg {
+  width: 100%;
+}
 
 /* メニュー、アバウト、ロケーション共通 */
 .title_box {
+  position: absolute;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 30%;
+  height: 200px;
+  z-index:10
 }
 .list_box {
   background-color: #fff;
@@ -197,23 +211,37 @@ body {
   font-size: 3rem;
 }
 
+.contents_wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.contents_wrapper_inner , .contents_wrapper_inner2, .contents_wrapper_inner3 {
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  z-index: 99;
+  background-color: #fff;
+}
+
 /* メニュー */
 .menu_box {
   display: flex;
   justify-content: center;
   padding: 50px 0px;
+  box-sizing: border-box;
 }
 .menu_item_r {
   border-left: 0.5px solid black;
   width: 40%;
   height: auto;
-  padding: 50px;
+  padding: 0px 50px;
 }
 .menu_item_l {
   border-right: 0.5px solid black;
   width: 40%;
   height: auto;
-  padding: 50px;
+  padding: 0px 50px;
 }
 .menu_title_inner {
   text-align: center;
@@ -395,6 +423,13 @@ body {
     z-index: 2;
     width: 100%;
     height: 100px;
+  }
+  .contents_wrapper_inner , .contents_wrapper_inner2, .contents_wrapper_inner3 {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    z-index: 99;
+    background-color: #fff;
   }
   /* セクションタイトル（共通） */
   .menu_item_title {
