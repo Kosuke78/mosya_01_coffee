@@ -404,6 +404,13 @@ body {
   .mv {
     background-position: center center;
   }
+  .mv_title {
+    font-size: 4rem;
+  }
+  .nav_menu {
+    right: 0;
+    font-size: 0.8rem;
+  }
   /* MENU */
   .title_box {
     height: 100px;
