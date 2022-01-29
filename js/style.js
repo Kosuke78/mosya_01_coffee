@@ -35,8 +35,8 @@ $(window).resize(function () {
   var child1 = $('.title_box').height();
   // その下のコンテンツのBOX分の高さを取得
   var child2 = $('.menu_box').outerHeight();
-  var child3 = $('contents_wrapper_inner2').outerHeight();
-  var child4 = $('location_box').outerHeight();
+  var child3 = $('.contents_wrapper_inner2').outerHeight();
+  var child4 = $('.location_box').outerHeight();
 
 
   // 余白分の高さを計算
